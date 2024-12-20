@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacktype clone by ahmed</title>
+    <style>
+        body {
+            
+            height: 100vh;
+            background-color: black;
+            color: green;
+            font-size: 2rem;
+            font-family: Courier;
+            margin: 0;
+            font-weight: bold;
+            overflow-x: hidden;
+        }
+        .hacking {
+            padding-left: 80px;
+            white-space: pre;
+            display: inline;
+            padding-bottom: 25%;
+        }
+        .cursor {
+            color: transparent;
+        }
+        .green {
+            color: green;
+            display: inline;
+        }
+        .absolute-mask {
+            position: fixed;
+            height: 100vh;
+            width: 100vw;
+            padding: 0;
+            margin: 0;
+            
+            opacity: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: red;
+            font-size: 3.5rem;
+        }
+        .denied {
+            border: 5px solid red;
+            text-align: center;
+            padding: 70px 150px;
+            box-shadow: 0 0 30px red;
+            background-color: black;
+        }
+        .blur {
+            filter: blur(4px);
+        }
+        .show {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+     <div class="absolute-mask">
+        <div class="denied">Access denied</div>
+     </div>
+    <div class="container">
+        <div class="hacking">
+        
+        </div>
+        <span class="cursor">|</span>
+    </div>    
+    <script src="./hacktype.js"></script>
+</body>
+</html>
